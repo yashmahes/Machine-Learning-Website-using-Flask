@@ -22,9 +22,14 @@ def home():
     return render_template('index.html')
 
 
-@app.route("/about")
-def about():
-    return render_template('about.html')
+@app.route("/about_companies")
+def about_companies():
+    return render_template('about_companies.html')
+
+
+@app.route("/about_investors")
+def about_investors():
+    return render_template('about_investors.html')
 
 
 @app.route("/contact", methods=['GET', 'POST'])
